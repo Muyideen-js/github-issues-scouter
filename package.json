@@ -1,0 +1,17 @@
+{
+  "name": "github-issues-scouter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Team platform: scouters get GitHub issues assigned, admin routes them to devs, devs fix and open PRs.",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
