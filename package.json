@@ -5,13 +5,14 @@
   "type": "module",
   "description": "Team platform: scouters get GitHub issues assigned, admin routes them to devs, devs fix and open PRs.",
   "scripts": {
-    "start": "node --disable-warning=ExperimentalWarning server.js",
-    "dev": "node --disable-warning=ExperimentalWarning --watch server.js"
+    "start": "node init && node server.js",
+    "dev": "node init && node --watch server.js"
   },
   "engines": {
-    "node": ">=22.13"
+    "node": ">=20"
   },
   "dependencies": {
+    "@libsql/client": "^0.14.0",
     "express": "^4.21.2"
   }
 }
